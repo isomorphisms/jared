@@ -3,7 +3,7 @@
 
 library(quantmod)
 
-mth <- LETTERS[c(6:9,11:12,14:15)]
+mth <- LETTERS[c(6:8,10:11,13:14)]
 yr <- 13
 n <- 10 # number of periods for calculating historical volatility in the chart
 
