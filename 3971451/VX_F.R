@@ -9,7 +9,7 @@ n <- 10 # number of periods for calculating historical volatility in the chart
 
 url <- paste0("http://cfe.cboe.com/Publish/ScheduledTask/MktData/datahouse/CFE_",mth,yr,"_VX.csv")
 x <- read.csv(url,header=FALSE, stringsAsFactors=F)
-colnames(x) <- c(x[1,])
+colnames(x) <- names(x)
 x <- x[-1,]
 
 x$"Trade Date" <- as.Date(x$'Trade Date', format='%m/%d/%Y')
