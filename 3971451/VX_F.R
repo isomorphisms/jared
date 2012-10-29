@@ -7,7 +7,7 @@ mth <- letters[6:12]
 yr <- 13
 n <- 10 # number of periods for calculating historical volatility in the chart
 
-url <- paste0("http://cfe.cboe.com/Publish/ScheduledTask/MktData/datahouse/CFE_",mth,yr,"_VX.csv")
+url <- paste("http://cfe.cboe.com/Publish/ScheduledTask/MktData/datahouse/CFE_",mth,yr,"_VX.csv")
 x <- read.csv(url,header=FALSE, stringsAsFactors=F)
 colnames(x) <- names(x)
 x <- x[-1,]
